@@ -1,0 +1,27 @@
+A função open() é utilizada para a abertura dos arquivos. Sua sintaxe é: arquivo = open('arquivo.txt', 'w')
+    IMPORTANTE!
+    Ao utilizar 'w' em um arquivo já existente, ele reescreverá todo o conteúdo do arquivo, fazendo com que todos os dados que estavam nele 
+    sejam apagados.
+
+A função write() é utilizada para gravar informações em um arquivo existente. Sua sintaxe é: arquivo.write('Curso Python n')
+
+A função close() serve para encerrar o arquivo após sua utilização. Sua sintaxe é: arquivo.close()
+    IMPORTANTE!
+    Nunca abra o arquivo com a função open e depois o faça de novo, sem antes fechar a instância anterior.
+    Um dos motivos da necessidade da função close() é que se tentarmos escrever em um arquivo e não o fecharmos depois de terminar a escrita, 
+    as informações não chegarão ao arquivo e nada será escrito.
+
+A função read() realiza a leitura de todo conteúdo do arquivo. 
+Sua sintase é:
+    leitura=open('arquivo.txt, 'r')
+    print leitura.read()
+    leitura.close()
+Utilizamos o parâmetro ‘r’ que representa que o arquivo está sendo aberto em modo leitura.
+Desta forma, não é possível modificar os dados contidos no arquivo.
+    IMPORTANTE!
+    Ao utilizar a função read(), o nome do arquivo deve ser:
+
+    1) Uma string com o caminho completo (por exemplo, C Documentos teste txt)
+    ou
+    2) O caminho em relação ao diretório atual (nomes txt do arquivo que se deseja abrir).
+
